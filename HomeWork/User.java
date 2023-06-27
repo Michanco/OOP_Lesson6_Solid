@@ -1,4 +1,4 @@
-public class User{
+public class User {
 	private String name;
 	
 	public User(String name){
@@ -10,11 +10,10 @@ public class User{
 	}
 	
 	public void save(){
-		Persister persister = new Persister(this);
-		persister.save();
+		Outputable.outSave(name);
 	}
 	
 	public void report(){
-		System.out.println("Report for user: " + name);
+		Outputable.outReport(name);
 	}
 }
