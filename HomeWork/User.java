@@ -5,15 +5,11 @@ public class User {
 		this.name = name;
 	}
 	
-	public String getName(){
-		return name;
-	}
-	
 	public void save(){
-		Outputable.outSave(name);
+		Outputable.outSave(this.name);
 	}
 	
 	public void report(){
-		Outputable.outReport(name);
+		Outputable.outReport(this.name);
 	}
 }
